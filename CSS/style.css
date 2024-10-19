@@ -1,0 +1,83 @@
+
+/* common css  */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body{
+    /* font-family: "Manrope", sans-serif; */
+    font-family: "Poppins", sans-serif;
+    /* font-family: "Inter", sans-serif; */
+}
+
+/* nav bar section start */
+
+.influencer-nav{
+    display: flex;
+    margin-top: 85px;
+    justify-content: space-between;
+}
+.influencer-nav h2{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+}
+.influencer-link ul > li{
+    list-style: none;
+}
+.influencer-link ul > li > a{
+    font-size: 17px;
+    font-weight: 600;
+    color: rgb(58, 58, 58);
+    text-decoration: none;
+}
+.influencer-link ul{
+    display: flex;
+    gap: 40px;
+}
+
+/* hero section start */
+
+.hero {
+    display: flex;
+    margin-top: 80px;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero-description h1{
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 70px;
+    color: rgb(58, 58, 58);
+}
+.hero-description p{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-top: 16px;
+    color: rgb(58, 58, 58);
+}
+.hero-description button{
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 16px;
+    padding: 10px 24px;
+    border: none;
+    display: flex;
+    border-radius: 41px;
+    gap: 12px;
+    align-items: center;
+    background-color: rgb(224, 44, 109);
+}
+.hero-images{
+    background-image: url('../images/Circle\ design.svg');
+}
