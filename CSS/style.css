@@ -65,7 +65,7 @@ body{
     margin-top: 16px;
     color: rgb(58, 58, 58);
 }
-.hero-description button{
+.btn button{
     font-size: 16px;
     font-weight: 700;
     color: #ffffff;
@@ -80,4 +80,25 @@ body{
 }
 .hero-images{
     background-image: url('../images/Circle\ design.svg');
+}
+
+/* responsive media queary mobile device */
+
+@media screen and (max-width: 576px) {
+    .influencer-link{
+        display: none;
+    }    
+    .influencer-nav h2{
+        text-align: center;
+    }
+    .hero{
+        flex-direction: column-reverse;
+    }
+    .hero-description{
+        text-align: center;
+    }
+    .btn{
+        display: flex;
+        justify-content: center;
+    }
 }
