@@ -1,45 +1,54 @@
-
 /* common css  */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.container{
+.container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-body{
+.container1 {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+body {
     /* font-family: "Manrope", sans-serif; */
     font-family: "Poppins", sans-serif;
     /* font-family: "Inter", sans-serif; */
+    /* font-family: "Roboto", sans-serif; */
 }
 
 /* nav bar section start */
 
-.influencer-nav{
+.influencer-nav {
     display: flex;
     margin-top: 85px;
     justify-content: space-between;
 }
-.influencer-nav h2{
+
+.influencer-nav h2 {
     font-size: 24px;
     font-weight: 700;
     font-family: "Poppins", sans-serif;
 }
-.influencer-link ul > li{
+
+.influencer-link ul>li {
     list-style: none;
 }
-.influencer-link ul > li > a{
+
+.influencer-link ul>li>a {
     font-size: 17px;
     font-weight: 600;
     color: rgb(58, 58, 58);
     text-decoration: none;
 }
-.influencer-link ul{
+
+.influencer-link ul {
     display: flex;
     gap: 40px;
 }
@@ -52,20 +61,23 @@ body{
     align-items: center;
     justify-content: space-between;
 }
-.hero-description h1{
+
+.hero-description h1 {
     font-size: 52px;
     font-weight: 700;
     line-height: 70px;
     color: rgb(58, 58, 58);
 }
-.hero-description p{
+
+.hero-description p {
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
     margin-top: 16px;
     color: rgb(58, 58, 58);
 }
-.btn button{
+
+.btn button {
     font-size: 16px;
     font-weight: 700;
     color: #ffffff;
@@ -78,27 +90,134 @@ body{
     align-items: center;
     background-color: rgb(224, 44, 109);
 }
-.hero-images{
+
+.hero-images {
     background-image: url('../images/Circle\ design.svg');
 }
+
+/* sponsors company section start */
+
+.main-company {
+    margin-top: 80px;
+}
+
+.sponsors-company {
+    display: grid;
+    margin: 55px 0;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+/* popular collection section start */
+.popular-collection {
+    margin-top: 100px;
+}
+
+.collection-title {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(58, 58, 58);
+}
+
+.popular-card {
+    display: grid;
+    gap: 35px;
+    margin-top: 55px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    padding: 17px 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 13px 0px rgba(0, 0, 0, 0.46);
+    -webkit-box-shadow: 0px 2px 13px 0px rgba(0, 0, 0, 0.46);
+    -moz-box-shadow: 0px 2px 13px 0px rgba(0, 0, 0, 0.46);
+}
+
+.card h2 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 16px;
+    color: rgb(24, 25, 31);
+}
+
+.card h4 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 6px;
+    color: rgba(0, 0, 0, 0.87);
+    font-family: "Inter", sans-serif;
+}
+
+.star i {
+    margin-top: 10px;
+    color: rgb(251, 130, 0);
+}
+
+.star {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.star p {
+    font-weight: 700;
+    margin-top: 5px;
+    color: rgb(94, 99, 102);
+    font-family: "Roboto", sans-serif
+}
+
+.card-p {
+    font-weight: 700;
+    line-height: 143%;
+    letter-spacing: 1.8%;
+    margin-top: 5px;
+    color: rgb(120, 120, 133);
+    font-family: "Inter", sans-serif;
+}
+
+.see-more {
+    display: flex;
+    gap: 10px;
+    font-weight: 700;
+    margin-top: 50px;
+    cursor: pointer;
+     color: rgba(224, 44, 109, 0.87);
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
 
 /* responsive media queary mobile device */
 
 @media screen and (max-width: 576px) {
-    .influencer-link{
+    header {
+        padding: 15px;
+    }
+
+    .influencer-link {
         display: none;
-    }    
-    .influencer-nav h2{
+    }
+
+    .influencer-nav h2 {
         text-align: center;
     }
-    .hero{
+
+    .hero {
         flex-direction: column-reverse;
     }
-    .hero-description{
+
+    .hero-description {
         text-align: center;
     }
-    .btn{
+
+    .btn {
         display: flex;
         justify-content: center;
+    }
+
+    .sponsors-company {
+        grid-template-columns: repeat(4, 2fr);
     }
 }
