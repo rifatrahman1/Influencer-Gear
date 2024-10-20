@@ -187,7 +187,38 @@ body {
     align-items: center;
 }
 
+/* feature product place seciotn start */
 
+.feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.feature-description h1{
+    font-size: 38px;
+    font-weight: 700;
+    color: rgb(10, 8, 38);
+}
+.feature-description p{
+    font-weight: 700;
+    margin-top: 16px;
+    line-height: 28px;
+    color: rgb(108, 108, 108);
+}
+.btn button {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 16px;
+    padding: 10px 24px;
+    border: none;
+    display: flex;
+    border-radius: 41px;
+    gap: 12px;
+    align-items: center;
+    background-color: rgb(224, 44, 109);
+}
 
 /* responsive media queary mobile device */
 
@@ -204,7 +235,7 @@ body {
         text-align: center;
     }
 
-    .hero {
+    .hero, .feature {
         flex-direction: column-reverse;
     }
 
@@ -227,5 +258,11 @@ body {
     .card{
         margin-left: 100px;
         width: 65%;
+    }
+    .feature-description{
+        text-align: center;
+    }
+    .feature-images{
+        margin-top: 30px;
     }
 }
