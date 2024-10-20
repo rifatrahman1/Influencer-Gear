@@ -220,4 +220,12 @@ body {
     .sponsors-company {
         grid-template-columns: repeat(4, 2fr);
     }
+    .popular-card{
+        
+        grid-template-columns: 1fr;
+    }
+    .card{
+        margin-left: 100px;
+        width: 65%;
+    }
 }
