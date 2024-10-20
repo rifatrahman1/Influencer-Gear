@@ -182,30 +182,33 @@ body {
     font-weight: 700;
     margin-top: 50px;
     cursor: pointer;
-     color: rgba(224, 44, 109, 0.87);
+    color: rgba(224, 44, 109, 0.87);
     justify-content: flex-end;
     align-items: center;
 }
 
 /* feature product place seciotn start */
 
-.feature{
+.feature {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 100px;
 }
-.feature-description h1{
+
+.feature-description h1 {
     font-size: 38px;
     font-weight: 700;
     color: rgb(10, 8, 38);
 }
-.feature-description p{
+
+.feature-description p {
     font-weight: 700;
     margin-top: 16px;
     line-height: 28px;
     color: rgb(108, 108, 108);
 }
+
 .btn button {
     font-size: 16px;
     font-weight: 700;
@@ -218,6 +221,36 @@ body {
     gap: 12px;
     align-items: center;
     background-color: rgb(224, 44, 109);
+}
+
+/* footer section start */
+
+footer {
+    margin-top: 100px;
+    text-align: center;
+    background-color: #0b0827;
+}
+
+.main-footer {
+    padding: 50px 0;
+}
+
+.main-footer h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+.main-footer p {
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 5px;
+    line-height: 24px;
+    color: rgb(217, 219, 225);
+}
+
+.social{
+    margin-top: 18px;
 }
 
 /* responsive media queary mobile device */
@@ -235,7 +268,8 @@ body {
         text-align: center;
     }
 
-    .hero, .feature {
+    .hero,
+    .feature {
         flex-direction: column-reverse;
     }
 
@@ -251,18 +285,22 @@ body {
     .sponsors-company {
         grid-template-columns: repeat(4, 2fr);
     }
-    .popular-card{
-        
+
+    .popular-card {
+
         grid-template-columns: 1fr;
     }
-    .card{
+
+    .card {
         margin-left: 100px;
         width: 65%;
     }
-    .feature-description{
+
+    .feature-description {
         text-align: center;
     }
-    .feature-images{
+
+    .feature-images {
         margin-top: 30px;
     }
 }
